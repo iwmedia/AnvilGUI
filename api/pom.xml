@@ -27,109 +27,109 @@
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_7_R4</artifactId>
+            <artifactId>anvilgui-1_7_r4</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_8_R1</artifactId>
+            <artifactId>anvilgui-1_8_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_8_R2</artifactId>
+            <artifactId>anvilgui-1_8_r2</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_8_R3</artifactId>
+            <artifactId>anvilgui-1_8_r3</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_9_R1</artifactId>
+            <artifactId>anvilgui-1_9_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_9_R2</artifactId>
+            <artifactId>anvilgui-1_9_r2</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_10_R1</artifactId>
+            <artifactId>anvilgui-1_10_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_11_R1</artifactId>
+            <artifactId>anvilgui-1_11_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_12_R1</artifactId>
+            <artifactId>anvilgui-1_12_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_13_R1</artifactId>
+            <artifactId>anvilgui-1_13_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_13_R2</artifactId>
+            <artifactId>anvilgui-1_13_r2</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_14_R1</artifactId>
+            <artifactId>anvilgui-1_14_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_14_4_R1</artifactId>
+            <artifactId>anvilgui-1_14_4_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_15_R1</artifactId>
+            <artifactId>anvilgui-1_15_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_16_R1</artifactId>
+            <artifactId>anvilgui-1_16_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_16_R2</artifactId>
+            <artifactId>anvilgui-1_16_r2</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_16_R3</artifactId>
+            <artifactId>anvilgui-1_16_r3</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.wesjd</groupId>
-            <artifactId>anvilgui-1_17_R1</artifactId>
+            <artifactId>anvilgui-1_17_r1</artifactId>
             <version>${project.parent.version}</version>
             <scope>compile</scope>
         </dependency>

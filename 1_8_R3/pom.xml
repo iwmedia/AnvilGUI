@@ -10,7 +10,7 @@
         <version>1.5.2-SNAPSHOT</version>
     </parent>
 
-    <artifactId>anvilgui-1_8_R3</artifactId>
+    <artifactId>anvilgui-1_8_r3</artifactId>
 
     <dependencies>
         <dependency>
