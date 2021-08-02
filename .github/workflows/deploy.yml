@@ -1,0 +1,50 @@
+name: Deploy CI
+
+on:
+  push:
+    branches:
+      - "deploy"
+
+jobs:
+  build:
+    name: Deploy CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        ref: deploy
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 16
+        uses: actions/setup-java@v2
+        with:
+          java-version: 16
+          distribution: "adopt"
+          server-id: github
+          server-username: PACKAGES_USERNAME
+          server-password: PACKAGES_PASSWORD
+
+      - name: Cache local Maven repository
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-release-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+
+      - name: Build with Maven
+        run: mvn -B package
+        id: build
+        env:
+          PACKAGES_USERNAME: ${{ secrets.PACKAGES_USERNAME }}
+          PACKAGES_PASSWORD: ${{ secrets.PACKAGES_PASSWORD }}
+
+      - name: Publish package to github
+        run: mvn -B deploy
+        env:
+          PUBLISH_TO_GITHUB: ${{ secrets.PUBLISH_TO_GITHUB }}
+          PACKAGES_USERNAME: $GITHUB_ACTOR
+          PACKAGES_PASSWORD: ${{ github.token }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+        if: steps.build.outcome == 'success'
