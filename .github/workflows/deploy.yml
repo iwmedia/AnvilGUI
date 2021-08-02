@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        ref: deploy
         with:
+          ref: deploy
           fetch-depth: 0
 
       - name: Set up JDK 16
@@ -35,14 +35,10 @@ jobs:
       - name: Build with Maven
         run: mvn -B package
         id: build
-        env:
-          PACKAGES_USERNAME: ${{ secrets.PACKAGES_USERNAME }}
-          PACKAGES_PASSWORD: ${{ secrets.PACKAGES_PASSWORD }}
 
       - name: Publish package to github
         run: mvn -B deploy
         env:
-          PUBLISH_TO_GITHUB: ${{ secrets.PUBLISH_TO_GITHUB }}
           PACKAGES_USERNAME: $GITHUB_ACTOR
           PACKAGES_PASSWORD: ${{ github.token }}
           REPOSITORY_OWNER: ${{ github.repository_owner }}
